@@ -28,8 +28,8 @@ function Home ({items ,
             />)))
         }
     return(
-        <div className="content p-40">
-        <div className="d-flex align-center mb-40 justify-between">
+        <div className="content p-20">
+        <div className="header__home d-flex align-center mb-40 justify-between">
         <h1>{searchValue ? `On request: "${searchValue}"` : 'All sneakers'}</h1>
         <div className="search-block d-flex">
             <img src="/img/search.svg" alt="Search" />
@@ -38,7 +38,7 @@ function Home ({items ,
             <input onChange={onChangeSearchInput} value={searchValue} placeholder="Search..."/>
         </div>
         </div>
-        <div className="d-flex flex-wrap">
+        <div className="card__area d-flex flex-wrap">
             {renderitems()}
         </div>
     </div>

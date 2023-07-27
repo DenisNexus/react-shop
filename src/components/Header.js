@@ -6,8 +6,8 @@ function Header({onClickCart ,items,favoritItems}){
     // данные с костомного хука 
     const {totalPrise} = useCart();
     return(
-    <header className="d-flex justify-between align-center p-40">
-    <Link className="d-flex align-center" to="/">
+    <header className="header d-flex justify-between align-center p-40">
+    <Link className="header__titile  d-flex align-center" to="/">
             <img width={40} height={40} src= "/img/logo.png" alt="logo" />
     <div className="ml-15">
         <h3 className="text-uppercase">React Sneakers</h3>
